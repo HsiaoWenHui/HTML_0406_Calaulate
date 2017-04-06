@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Calaulate</h1>
+<p id="demo">answer</p>
+<input type="number" id="first">
+<input type="number" id="second">
+
+<script>
+
+function division(){
+	var a=parseInt(document.getElementById("first").value);
+	var b=parseInt(document.getElementById("second").value);
+	document.getElementById("demo").innerHTML=a/b;
+}
+function multi(){
+	var a=parseInt(document.getElementById("first").value);
+	var b=parseInt(document.getElementById("second").value);
+	document.getElementById("demo").innerHTML=a*b;
+}
+function plus(){
+	var a=parseInt(document.getElementById("first").value);
+	var b=parseInt(document.getElementById("second").value);
+	document.getElementById("demo").innerHTML=a+b;
+}
+function minus (){
+	var a=parseInt(document.getElementById("first").value);
+	var b=parseInt(document.getElementById("second").value);
+	document.getElementById("demo").innerHTML=a-b;
+}
+function clean (){
+	var a=parseInt(document.getElementById("first").value="");
+	var b=parseInt(document.getElementById("second").value="");
+	document.getElementById("demo").innerHTML="";
+}
+</script>
+<button type="button" onclick="plus()">相加!</button>
+<button type="button" onclick="division()">相除!</button>
+<button type="button" onclick="minus()">相減!</button>
+<button type="button" onclick="multi()">相乘!</button>
+<button type="button" onclick="clean()">清除!</button>
+</body>
+</html>
